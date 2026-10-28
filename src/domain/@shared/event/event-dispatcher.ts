@@ -38,3 +38,6 @@ export default class EventDispatcher implements EventDispatcherInterface {
     }
   }
 }
+
+// ponytail: instância global usada pelos agregados; troque por injeção quando houver mais de um contexto.
+export const eventDispatcher = new EventDispatcher();
